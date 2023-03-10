@@ -4,7 +4,6 @@ var pagesbut = document.getElementById('pagesButton');
 pagesbut.addEventListener("click", function() {
   if (pagesl.style.display === ("block")) {
     pagesl.style.display="none"
-    pagesl.style.display="block";
     pagesbut.style.borderBottomLeftRadius="10px"
     pagesbut.style.borderBottomRightRadius="10px"
     pagesbut.style.filter="drop-shadow(30px 10px 4px black)"
