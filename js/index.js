@@ -14,16 +14,8 @@ pagesbut.addEventListener("click", function() {
     pagesbut.style.filter="none"
   }
 });
-
-
-if (document.addEventListener) {
-  document.addEventListener('contextmenu', function(e) {
-    alert("please, for the love of god, don't fucking inspect element.");
-    e.preventDefault();
-  }, false);
-} else {
-  document.attachEvent('oncontextmenu', function() {
-    alert("You've tried to open context menu");
-    window.event.returnValue = false;
-  });
-}
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  alert("Right-clicking is not allowed on this website. Click OK to be redirected to vmak.tk.");
+  window.location.href = "https://vmak.tk/";
+});
